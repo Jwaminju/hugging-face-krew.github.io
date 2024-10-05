@@ -37,6 +37,14 @@ authors:
     email: chaewon1019@ewhain.net 
     web: https://github.com/chhaewxn/
     description: "Hello! I'm Chaewon Song, a developer aspiring to become an Software engineer 🤗"
+  minnju:
+    name: Jwa Minju
+    display_name: minju 
+    avatar: 'assets/images/author/minju.png'
+    email: jminj6@gmail.com 
+    web: https://github.com/Jwaminju/
+    description: "Hello, I'm minju! 🤗"
+
 
 # Social
 social:
