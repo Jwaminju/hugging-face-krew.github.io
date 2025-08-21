@@ -2,6 +2,8 @@ name: PR Preview
 
 on:
   pull_request:
+    branches:
+      - main
 
 jobs:
   build:
@@ -36,7 +38,7 @@ jobs:
       - name: Comment PR with Preview URL
         uses: actions/github-script@v6
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.MY_GITHUB_TOKEN }}
           script: |
             github.issues.createComment({
               issue_number: context.issue.number,
