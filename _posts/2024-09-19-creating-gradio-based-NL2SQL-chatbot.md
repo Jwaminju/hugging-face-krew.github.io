@@ -3,9 +3,11 @@ layout: post
 title: "Gradio 기반 NL2SQL 챗봇 만들기 - Part 1: 이론과 데이터셋"
 author: chaewon
 categories: [NLP, SQL, chatbot]
-image: assets/images/gradio_free.png
+image: assets/images/blog/posts/2024-09-19-creating-gradio-based-NL2SQL-chatbot/gradio_free_1160.png
 ---
-
+* TOC
+{:toc}
+<!--toc-->
 안녕하세요🤗 첫 포스트는 NL2SQL 챗봇 개발 시리즈의 첫 번째 파트로, 이론적 배경과 데이터셋에 대해 다뤄보려합니다. NL2SQL의 기본 개념, 필요성, 그리고 데이터셋에 대해 자세히 알아보겠습니다.
 
 이번 포스트는 도서 'LLM을 활용한 실전 AI 애플리케이션 개발 (저자: 허정준)'을 참고하여 작성하였습니다.

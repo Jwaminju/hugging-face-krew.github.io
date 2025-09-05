@@ -29,6 +29,11 @@ body {
 }
 .serif-font {
     font-family: "PT Sans", sans-serif;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+
+    @media (max-width: 480px) {
+        font-size: clamp(0.7rem, 4vw, 1rem);
+    }
 }
 @media (max-width: 1366px) {
     .container-xl, .container-lg, .container-md, .container-sm, .container {
