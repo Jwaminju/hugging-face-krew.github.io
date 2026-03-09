@@ -11,8 +11,8 @@ projects:
       - title: "Weekly Series"
         items:
           # Uncomment each item when that week's page should appear in the sidebar.
-          # - title: "Week 01"
-          #   url: "/learn/blog-agent/week-01/"
+          - title: "Week 01"
+            url: "/learn/blog-agent/week-01/"
           # - title: "Week 02"
           #   url: "/learn/blog-agent/week-02/"
           # - title: "Week 03"

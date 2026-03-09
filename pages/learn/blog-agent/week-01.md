@@ -6,8 +6,8 @@ learn_project: blog_agent
 eyebrow: "Weekly Series"
 description: "Kickoff, 프로젝트 범위 정리, 운영 규칙과 역할 분담을 문서화합니다."
 hero_actions:
-  - label: "Syllabus"
-    url: "/learn/blog-agent/syllabus/"
+  - label: "Roadmap"
+    url: "/learn/blog-agent/roadmap/"
   - label: "Week 02"
     url: "/learn/blog-agent/week-02/"
     variant: "secondary"
