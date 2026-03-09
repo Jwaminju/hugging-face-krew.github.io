@@ -1,0 +1,55 @@
+---
+layout: default
+---
+
+<article class="learn-page">
+  <header class="learn-hero">
+    <div class="learn-hero__content">
+      {% if page.eyebrow %}
+      <p class="learn-eyebrow">{{ page.eyebrow }}</p>
+      {% endif %}
+      <h1 class="learn-title">{{ page.title }}</h1>
+      {% if page.description %}
+      <p class="learn-description">{{ page.description }}</p>
+      {% endif %}
+      {% if page.hero_actions %}
+      <div class="learn-actions">
+        {% for action in page.hero_actions %}
+        <a class="learn-button {% if action.variant == 'secondary' %}learn-button--secondary{% endif %}" href="{{ action.url }}">{{ action.label }}</a>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+    <div class="learn-hero__visual">
+      <div class="learn-hero-card">
+        <p class="learn-hero-card__label">Workflow</p>
+        <ol class="learn-hero-card__steps">
+          <li>Detect</li>
+          <li>Translate</li>
+          <li>Review</li>
+          <li>Publish</li>
+        </ol>
+      </div>
+    </div>
+  </header>
+
+  <div class="learn-shell">
+    <aside class="learn-sidebar">
+      <div class="learn-sidebar__inner">
+        <p class="learn-sidebar__title">On this page</p>
+        <nav class="learn-sidebar__nav">
+          <a href="#overview">Overview</a>
+          <a href="#tracks">Tracks</a>
+          <a href="#workflow">Workflow</a>
+          <a href="#timeline">18-Week Plan</a>
+          <a href="#deliverables">Deliverables</a>
+          <a href="#references">References</a>
+        </nav>
+      </div>
+    </aside>
+
+    <div class="learn-main">
+      {{ content }}
+    </div>
+  </div>
+</article>
