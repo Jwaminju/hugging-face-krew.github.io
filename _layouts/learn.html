@@ -36,15 +36,26 @@ layout: default
   <div class="learn-shell">
     <aside class="learn-sidebar">
       <div class="learn-sidebar__inner">
-        <p class="learn-sidebar__title">On this page</p>
+        {% assign learn_project = site.data.learn.projects[page.learn_project] %}
+        {% if learn_project %}
+        <p class="learn-sidebar__project">{{ learn_project.title }}</p>
+        {% for section in learn_project.sections %}
+        <p class="learn-sidebar__title">{{ section.title }}</p>
         <nav class="learn-sidebar__nav">
-          <a href="#overview">Overview</a>
-          <a href="#tracks">Tracks</a>
-          <a href="#workflow">Workflow</a>
-          <a href="#timeline">18-Week Plan</a>
-          <a href="#deliverables">Deliverables</a>
-          <a href="#references">References</a>
+          {% for item in section.items %}
+          <a class="{% if page.permalink == item.url %}is-active{% endif %}" href="{{ item.url }}">{{ item.title }}</a>
+          {% endfor %}
         </nav>
+        {% endfor %}
+        {% endif %}
+        {% if page.learn_toc %}
+        <p class="learn-sidebar__title">On this page</p>
+        <nav class="learn-sidebar__nav learn-sidebar__nav--toc">
+          {% for item in page.learn_toc %}
+          <a href="#{{ item.id }}">{{ item.title }}</a>
+          {% endfor %}
+        </nav>
+        {% endif %}
       </div>
     </aside>
 

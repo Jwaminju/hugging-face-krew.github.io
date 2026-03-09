@@ -2,16 +2,28 @@
 layout: learn
 title: Hugging Face KREW Blog Agent
 permalink: "/learn/blog-agent/"
+learn_project: blog_agent
 eyebrow: "Learn"
 description: "Hugging Face 공식 블로그를 한국어로 번역하고, 이를 재사용 가능한 지식 자산으로 확장하는 경량 에이전트 파이프라인 프로젝트입니다."
 hero_actions:
-  - label: "프로젝트 개요"
-    url: "/translation-mcp-project-overview/"
+  - label: "Syllabus 보기"
+    url: "/learn/blog-agent/syllabus/"
   - label: "공식 블로그 보기"
     url: "https://huggingface.co/blog"
   - label: "GitHub 저장소"
     url: "https://github.com/Hugging-Face-KREW/hf_translation_hub"
     variant: "secondary"
+learn_toc:
+  - id: overview
+    title: 프로젝트 개요
+  - id: tracks
+    title: 트랙 구성
+  - id: workflow
+    title: 워크플로우
+  - id: timeline
+    title: 18주 운영 계획
+  - id: references
+    title: 참고 링크
 ---
 
 <section class="learn-section">
@@ -149,24 +161,14 @@ hero_actions:
       <p>탐지, 문맥 추출, 생성, 배포의 흐름을 보고 에이전트 위치를 파악합니다.</p>
     </article>
     <article class="learn-card">
-      <h3>3. 18주 계획 보기</h3>
-      <p>개발 주간과 공통 공유 주간이 어떻게 나뉘는지 확인합니다.</p>
+      <h3>3. Syllabus 보기</h3>
+      <p>18주 운영안과 주차별 문서 구조를 확인합니다.</p>
     </article>
     <article class="learn-card">
-      <h3>4. 저장소와 연결하기</h3>
-      <p>기존 <code>hf_translation_hub</code> 코드를 어떤 부분에서 재사용할지 정리합니다.</p>
+      <h3>4. 주차별 시리즈 읽기</h3>
+      <p>매주 문서에서 목표, 결과물, 발표 포인트를 누적합니다.</p>
     </article>
   </div>
-</section>
-
-<section id="deliverables" class="learn-section">
-  <h2>기대 산출물</h2>
-  <ul class="learn-list">
-    <li>게시글 1건을 end-to-end로 처리할 수 있는 Translation-to-PR 파이프라인</li>
-    <li>용어와 문맥을 일관되게 유지하기 위한 Glossary 및 Context Pack</li>
-    <li>제목, 설명, 태그, 관련 링크를 포함한 메타데이터 생성 흐름</li>
-    <li>데모, 블로커, 다음 액션을 정리하는 주간 보고 포맷</li>
-  </ul>
 </section>
 
 <section id="references" class="learn-section">
@@ -175,6 +177,10 @@ hero_actions:
     <a class="learn-link-card" href="https://huggingface.co/blog">
       <strong>Hugging Face Blog</strong>
       <span>추적과 번역의 기준이 되는 공식 원문 소스입니다.</span>
+    </a>
+    <a class="learn-link-card" href="https://huggingface.co/content-policy">
+      <strong>Hugging Face Content Policy</strong>
+      <span>콘텐츠 운영과 게시 기준을 확인할 수 있는 공식 정책 문서입니다.</span>
     </a>
     <a class="learn-link-card" href="https://hugging-face-krew.github.io/translation-mcp-project-overview/">
       <strong>현재 프로젝트 개요</strong>

@@ -215,10 +215,19 @@ body {}
   letter-spacing: 0.06em;
 }
 
+.learn-sidebar__project {
+  margin-bottom: 1.1rem;
+  color: #0f172a;
+  font-size: 1rem;
+  font-weight: 800;
+  line-height: 1.4;
+}
+
 .learn-sidebar__nav {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  margin-bottom: 1.35rem;
 }
 
 .learn-sidebar__nav a {
@@ -226,8 +235,18 @@ body {}
   text-decoration: none;
 }
 
+.learn-sidebar__nav a.is-active {
+  color: #111827;
+  font-weight: 700;
+}
+
 .learn-sidebar__nav a:hover {
   color: #111827;
+}
+
+.learn-sidebar__nav--toc {
+  padding-top: 0.1rem;
+  border-top: 1px solid #e2e8f0;
 }
 
 .learn-main {
