@@ -13,6 +13,11 @@ hero_actions:
   - label: "GitHub 저장소"
     url: "https://github.com/Hugging-Face-KREW/hf_translation_hub"
     variant: "secondary"
+workflow_steps:
+  - "Detect"
+  - "Translate"
+  - "Review"
+  - "Publish"
 learn_toc:
   - id: overview
     title: 프로젝트 개요

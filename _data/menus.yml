@@ -11,7 +11,7 @@ topmenu:
   url: "activities/"
 
 - title: Learn
-  url: "learn/blog-agent/"
+  url: "learn/"
 
 - title: 🤗 어떻게 기여하나요?
   url: https://hugging-face-krew.github.io/how-to-contribute/

@@ -20,17 +20,18 @@ layout: default
       </div>
       {% endif %}
     </div>
+    {% if page.workflow_steps %}
     <div class="learn-hero__visual">
       <div class="learn-hero-card">
         <p class="learn-hero-card__label">Workflow</p>
         <ol class="learn-hero-card__steps">
-          <li>Detect</li>
-          <li>Translate</li>
-          <li>Review</li>
-          <li>Publish</li>
+          {% for step in page.workflow_steps %}
+          <li>{{ step }}</li>
+          {% endfor %}
         </ol>
       </div>
     </div>
+    {% endif %}
   </header>
 
   <div class="learn-shell">

@@ -390,6 +390,45 @@ body {}
   transform: translateY(-1px);
 }
 
+.learn-list-table {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #e2e8f0;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.learn-list-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.15rem 1.25rem;
+  border-bottom: 1px solid #e2e8f0;
+  color: #0f172a;
+  text-decoration: none;
+}
+
+.learn-list-row:last-child {
+  border-bottom: 0;
+}
+
+.learn-list-row:hover {
+  background: #f8fafc;
+  color: #0f172a;
+  text-decoration: none;
+}
+
+.learn-list-row__title {
+  font-weight: 700;
+}
+
+.learn-list-row__meta {
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
 .home-learn-banner {
   display: grid;
   grid-template-columns: minmax(0, 1.4fr) minmax(260px, 0.8fr);
