@@ -6,8 +6,8 @@ projects:
         items:
           - title: "소개"
             url: "/learn/blog-agent/"
-          - title: "Syllabus"
-            url: "/learn/blog-agent/syllabus/"
+          - title: "Roadmap"
+            url: "/learn/blog-agent/roadmap/"
       - title: "Weekly Series"
         items:
           # Uncomment each item when that week's page should appear in the sidebar.

@@ -12,9 +12,14 @@ learn_toc:
 <section id="projects" class="learn-section">
   <h2>프로젝트 목록</h2>
   <div class="learn-list-table">
-    <a class="learn-list-row" href="/learn/blog-agent/">
-      <span class="learn-list-row__title">Hugging Face KREW Blog Agent</span>
-      <span class="learn-list-row__meta">HF 공식 블로그를 번역하고, PR 자동화와 SEO 확장까지 연결하는 블로그 에이전트 프로젝트</span>
+    {% for project in site.data.learn.projects %}
+    {% assign project_meta = project[1] %}
+    {% assign intro_url = project_meta.sections[0].items[0].url %}
+    {% assign intro_page = site.pages | where: "permalink", intro_url | first %}
+    <a class="learn-list-row" href="{{ intro_url }}">
+      <span class="learn-list-row__title">{{ intro_page.title | default: project_meta.title }}</span>
+      <span class="learn-list-row__meta">{{ intro_page.description | default: project_meta.title }}</span>
     </a>
+    {% endfor %}
   </div>
 </section>

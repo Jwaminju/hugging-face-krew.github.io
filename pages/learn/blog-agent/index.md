@@ -6,8 +6,8 @@ learn_project: blog_agent
 eyebrow: "Learn"
 description: "Hugging Face 공식 블로그를 한국어로 번역하고, 이를 재사용 가능한 지식 자산으로 확장하는 경량 에이전트 파이프라인 프로젝트입니다."
 hero_actions:
-  - label: "Syllabus 보기"
-    url: "/learn/blog-agent/syllabus/"
+  - label: "Roadmap 보기"
+    url: "/learn/blog-agent/roadmap/"
   - label: "공식 블로그 보기"
     url: "https://huggingface.co/blog"
   - label: "GitHub 저장소"
@@ -25,8 +25,8 @@ learn_toc:
     title: 트랙 구성
   - id: workflow
     title: 워크플로우
-  - id: timeline
-    title: 18주 운영 계획
+  - id: operating-model
+    title: 운영 방식
   - id: references
     title: 참고 링크
 ---
@@ -120,38 +120,26 @@ learn_toc:
   </div>
 </section>
 
-<section id="timeline" class="learn-section">
-  <h2>18주 운영 계획</h2>
+<section id="operating-model" class="learn-section">
+  <h2>운영 방식</h2>
   <div class="learn-grid learn-grid--compact">
     <article class="learn-card">
-      <h3>W1-W2</h3>
-      <p>ECL 입력 구조, PR 규칙, 메타데이터 기준을 정리합니다.</p>
+      <h3>2주 개발 + 1주 공유</h3>
+      <p>기본 리듬은 2주 집중 개발 후 1주 공통 공유입니다.</p>
     </article>
     <article class="learn-card">
-      <h3>W4-W5</h3>
-      <p>첫 번역 MVP를 완성하고, 첫 자동 Draft PR을 생성합니다.</p>
+      <h3>트랙 병렬 운영</h3>
+      <p>Translation / ECL, PR / Ops, SEO / Content 트랙이 병렬로 움직입니다.</p>
     </article>
     <article class="learn-card">
-      <h3>W7-W8</h3>
-      <p>문맥 추출, 재시도 로직, SEO 검증 규칙을 강화합니다.</p>
+      <h3>공통 공유 주간</h3>
+      <p>W3, W6, W9, W12, W15, W18은 데모, 품질 리뷰, 범위 조정에 집중합니다.</p>
     </article>
     <article class="learn-card">
-      <h3>W10-W11</h3>
-      <p>사람 검수 루프, 알림 체계, 구조화 메타데이터를 안정화합니다.</p>
-    </article>
-    <article class="learn-card">
-      <h3>W13-W14</h3>
-      <p>종합 포스팅과 관련 콘텐츠 생성으로 범위를 확장합니다.</p>
-    </article>
-    <article class="learn-card">
-      <h3>W16-W17</h3>
-      <p>운영 문서, 복구 플로우, 최종 발행 품질을 정리합니다.</p>
+      <h3>상세 계획 분리</h3>
+      <p>18주 주차 계획과 마일스톤은 <code>Roadmap</code> 문서에서 관리합니다.</p>
     </article>
   </div>
-  <p class="learn-note">
-    W3, W6, W9, W12, W15, W18은 공통 공유 주간으로 운영하며, 신규 개발보다는 데모, 품질 리뷰, 운영 점검,
-    범위 재조정에 집중합니다.
-  </p>
 </section>
 
 <section class="learn-section">
@@ -166,12 +154,12 @@ learn_toc:
       <p>탐지, 문맥 추출, 생성, 배포의 흐름을 보고 에이전트 위치를 파악합니다.</p>
     </article>
     <article class="learn-card">
-      <h3>3. Syllabus 보기</h3>
+      <h3>3. Roadmap 보기</h3>
       <p>18주 운영안과 주차별 문서 구조를 확인합니다.</p>
     </article>
     <article class="learn-card">
-      <h3>4. 주차별 시리즈 읽기</h3>
-      <p>매주 문서에서 목표, 결과물, 발표 포인트를 누적합니다.</p>
+      <h3>4. Weekly Series 누적</h3>
+      <p>매주 문서에서 목표, 진행 내용, 결과물, 공유 내용을 누적합니다.</p>
     </article>
   </div>
 </section>

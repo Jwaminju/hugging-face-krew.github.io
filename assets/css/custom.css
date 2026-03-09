@@ -382,12 +382,23 @@ body {}
 }
 
 .learn-link-card {
+  position: relative;
   text-decoration: none;
+  padding-right: 3.25rem;
 }
 
 .learn-link-card:hover {
   text-decoration: none;
   transform: translateY(-1px);
+}
+
+.learn-link-card::after {
+  content: "->";
+  position: absolute;
+  right: 1.25rem;
+  top: 1.25rem;
+  color: #94a3b8;
+  font-weight: 700;
 }
 
 .learn-list-table {
@@ -400,11 +411,12 @@ body {}
 }
 
 .learn-list-row {
+  position: relative;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 1rem;
-  padding: 1.15rem 1.25rem;
+  padding: 1.15rem 3.25rem 1.15rem 1.25rem;
   border-bottom: 1px solid #e2e8f0;
   color: #0f172a;
   text-decoration: none;
@@ -420,13 +432,28 @@ body {}
   text-decoration: none;
 }
 
-.learn-list-row__title {
+.learn-list-row::after {
+  content: "->";
+  position: absolute;
+  right: 1.25rem;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
   font-weight: 700;
 }
 
+.learn-list-row__title {
+  max-width: 100%;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
 .learn-list-row__meta {
+  max-width: 100%;
   color: #64748b;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  line-height: 1.6;
 }
 
 .home-learn-banner {
